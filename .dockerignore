@@ -1,0 +1,6 @@
+# COLCON_IGNORE 는 ROS 2 colcon 전체 빌드에서 이 ROS1(catkin) 폴더를 빼려고 둔 표식이다(SW1-1951).
+# catkin_pkg 도 COLCON_IGNORE 를 무시 표식으로 보므로 Docker 이미지 안으로는 넣지 않는다 —
+# 넣으면 Dockerfile 의 `catkin build` 가 패키지 0개로 끝나 Kalibr 가 빌드되지 않는다.
+COLCON_IGNORE
+# 작업트리 설정 파일(하네스)
+.env.local
